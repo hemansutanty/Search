@@ -1,7 +1,7 @@
-#Search
+# Search
 
 
-###Problem Statement    
+### Problem Statement    
 -----------------------       
 COMPANY XXX is particularly interested in improving the volume and quality of traffic to a our
 public facing web sites from search engines. Many of these search engines are quite
@@ -37,7 +37,7 @@ Page 1: (8x8 + 7x6) = 106
 Page 2: = 0    
 Page 3: (8x7) = 56         
 
-#####Input    
+##### Input    
 Input data consist of one line for each web page and query.A line consists of a code letter
 followed by a list of keywords. Code letters P and Q denote a page and a query. Code letters and
 keywords are separated by at least one space. Ps and Qs may occur in any order.
@@ -45,7 +45,7 @@ Pages are added sequentially starting with page one. The case of characters in t
 not significant. Each query also has of a list of between one and 8 keywords. Again, case being
 insignificant for keywords. Number the queries sequentially starting with one.
 
-#####Output    
+##### Output    
 For each query, identify the 5 (or fewer) pages stored that are the most relevant to the query.
 Print a single line containing the query identifier, a colon, and the page identifiers of the five most
 relevant pages in the decreasing order of relevance. Page identifiers consist of the letter “P”
@@ -53,7 +53,7 @@ followed by the page number. Query identifiers consist of the letter “Q” fol
 number. If several pages have the same relevance, list them by increasing page number. Do not
 list pages that have no relationship (zero strength), even if fewer than five pages are identified.
 
-#####Additional Considerations    
+##### Additional Considerations    
 Although the search strength algorithm described here is quite simple, developers should make
 provision for substituting a more complex method in the future and consider the impact of nested
 pages.    
@@ -81,11 +81,11 @@ Q6:
 
 
 
-####Additional Considerations
+#### Additional Considerations
 Although the search strength algorithm described here is quite simple, developers should make
 provision for substituting a more complex method in the future and consider the impact of
 nested pages.   
-#####Problem 1:   
+##### Problem 1:   
 It’s high time we enhance our search solution to be able to handle nested pages
 A Page can have nested pages e.g. P1 can have nested pages P1.1, P1.2, P1.3 etc
 When a Query matches a given nested page, it’s score is calculated as per the algorithm in Part
@@ -106,7 +106,7 @@ Page 2: (7x7 + 64x0.1) = 55.4
 Page 3: (7x8) = 56.    
 Display only the parent pages in the search results e.g. if P1 does not match but P1.1 matches
 a query, show only P1 and not P1.1 in the results output    
-#####Input     
+##### Input     
 Code letters P denote a parent page and PP denote a child page under the previous parent. All
 PPs denote children/nested pages under the most recent P. A new P denotes a new parent
 page.    
